@@ -4,7 +4,7 @@ import tweepy
 from tweepy import API
 import unicodedata
 
-counter_tweet = 2
+counter_tweet = 0
 
 #Run self-writing stub
 content = []
