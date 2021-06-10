@@ -19,10 +19,11 @@ with open(__file__,"w") as f:
         f.write(content[i])
 
 # Authenticate to Twitter
-#auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
-auth = tweepy.OAuthHandler("oIv5KVh6tjgdgDifCvhJbjCmg", "NB7KWuS0JpMrVm41WR1lMYbWLEgXl0zWfk1Ukpv2ydBGBLleGn")
-#auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
-auth.set_access_token("1402330423901003778-EMnTYlV4w6nBfiWfseVu1vWCigPMuc", "efQNwHVol8WVdLEKMmaJ7WxcojocdXfhfEQ58vv5lwKhp")
+
+auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
+
+auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
+
 
 # Create API object
 api = tweepy.API(auth)
